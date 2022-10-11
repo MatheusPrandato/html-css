@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: lightgray;
+            margin: 0;
+        }
+
+        header {
+            background-color: lightblue;
+            padding: 5px;
+            margin: 5px;
+        }
+
+        header > h1 {
+            margin: 0px;
+        }
+
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 25px 0px;
+            box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.6);
+        }
+
+        article {
+            background-color: rgb(183, 255, 231);
+            text-align: justify;
+            padding: 5px;
+        }
+
+        article > h2 {
+            text-align: center;
+        }
+
+        article > aside {
+            background-color: black;
+            color: white;
+            text-align: right;
+            padding: 3px;
+        }
+
+        article > aside > p {
+            margin: 0px;
+        }
+
+        nav {
+            background-color: bisque;
+            padding: 3px;
+            text-align: center;
+            box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.6);
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            margin-right: 40px;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+            color: blue;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 5px;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+
+        section#assuntos {
+            text-decoration: underline;
+            font-weight: bold;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link 01</a>
+            <a href="#">Link 02</a>
+            <a href="#">Link 03</a>
+            <a href="#">Link 04</a>
+            <a href="#">Link 05</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="assuntos">
+            <p>Lorem ipsum dolor sit amet.</p>
+        </section>
+
+        <section id="noticias">
+            <article>
+                <h2>Notícias sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique voluptatibus eos dolores a veritatis vel assumenda harum. Atque, deleniti sequi.</p>
+                <aside>
+                    <p>Artigo escrito por José da Silva</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por MatheusPrandato</p>
+    </footer>
+</body>
+</html>
