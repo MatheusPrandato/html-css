@@ -15,7 +15,6 @@ header {
     height: 100px;
     margin-bottom: 20px;
     box-shadow: 3px 3px 10px black;
-    min-width: 100vw;
 }
 
 nav {
@@ -86,11 +85,11 @@ li.list-group-item {
   border: 0px;
 }
 
-span.test {
+#href {
   display: none;
 }
 
-input.test:checked, span.test:checked {
+#href:checked {
   display: inline-block;
 }
 
