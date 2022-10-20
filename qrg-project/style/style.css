@@ -79,6 +79,10 @@ ul.list-group {
   display: block;
 }
 
+ul#input-list {
+  columns: 3;
+}
+
 li.list-group-item {
   background-color: rgba(200, 200, 200, 0);
   width: fit-content;
@@ -105,4 +109,12 @@ p.p-ul {
   border-top: 1px solid black;
   border-right: 1px solid black;
   border-left: 1px solid black;
+}
+
+div#accordionFlushExample {
+  margin-bottom: 20px;
+}
+
+input.form-check-input {
+  display: none;
 }
