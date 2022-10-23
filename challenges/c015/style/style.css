@@ -7,7 +7,7 @@
 }
 
 html, body {
-    height: 100vh;
+    height: 98vh;
     width: 100vw;
 }
 
@@ -20,6 +20,11 @@ body {
 main {
     position: relative;
     height: 100vh;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
 }
 
 section#phone {
@@ -42,8 +47,8 @@ iframe#screen {
 }
 
 section#socials {
-    text-align: right;
-    background-attachment: fixed;
+    text-align: center;
+    padding-top: 11vh;
 }
 
 section#socials img {
