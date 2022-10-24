@@ -3,6 +3,6 @@
 /* Horizontal screen (landscape) */
 
 body {
-    background-image: url(/mq002/images/cev-landscape.jpg);
+    background-image: url(../images/cev-landscape.jpg);
     background-position: left bottom;
 }
