@@ -1,44 +1,73 @@
 @charset "UTF-8";
 
-/* Mobile First Version */
+/* All other medias */
 
-* {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+@media print {
+    
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+    
+    body {
+        background-image: url(../images/back-print.jpg);
+    }
+
+    main {
+        border: 2px solid black;
+        min-width: 90vw;
+    }
+
+    main::after {
+        content: 'This print was made from Matheus Prandato`s GitHub';
+    }
+
+    main h1 {
+        text-shadow: none;
+        color: black;
+    }
+    img#print { display: block; }
+    img#phone { display: none; }
 }
 
-html {
-    height: 100vh;
+@media screen and (min-width: 768px) and (max-width: 992px) { /* TABLET */
+    
+    body {
+        background-image: url(../images/back-tablet.jpg);
+    }
+
+    main {
+        min-width: 500px;
+    }
+
+    img#tablet { display: block; }
+    img#phone { display: none;
+    }
 }
 
-body {
-    background: black url(../images/back-phone.jpg) no-repeat;
-    background-size: cover;
-    background-position: center center;
+@media screen and (min-width: 992px) and (max-width:1200px) { /* PC */
+    
+    body {
+        background-image: url(../images/back-pc.jpg);
+    }
+
+    main {
+        min-width: 600px;
+    }
+
+    img#pc { display: block; }
+    img#phone { display: none; }
 }
 
-main {
-    background-color: rgba(255, 255, 255, 0.85);
-    max-width: 400px;
-    margin: auto;
-    border-radius: 10px;
-    padding: 10px;
-    margin-top: 20px;
-}
+@media screen and (min-width: 1200px) { /* TV */
+    
+    body {
+        background-image: url(../images/back-tv.jpg);
+    }
 
-h1 {
-    text-align: center;
-    color: white;
-    text-shadow: 2px 2px 2px black;
-}
+    main {
+        min-width: 800px;
+    }
 
-img {
-    display: block;
-    margin: auto;
-}
-
-img#tablet, #print, #pc, #tv {
-    display: none;
+    img#tv { display: block; }
+    img#phone { display: none; }
 }
