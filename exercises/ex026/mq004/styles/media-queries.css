@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+/* All other medias */
+
+@media print {
+    
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+    
+    body {
+        background-image: url(../images/back-print.jpg);
+    }
+
+    main {
+        border: 2px solid black;
+        min-width: 90vw;
+    }
+
+    main::after {
+        content: 'This print was made from Matheus Prandato`s GitHub';
+    }
+
+    main h1 {
+        text-shadow: none;
+        color: black;
+    }
+    img#print { display: block; }
+    img#phone { display: none; }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) { /* TABLET */
+    
+    body {
+        background-image: url(../images/back-tablet.jpg);
+    }
+
+    main {
+        min-width: 500px;
+    }
+
+    img#tablet { display: block; }
+    img#phone { display: none;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width:1200px) { /* PC */
+    
+    body {
+        background-image: url(../images/back-pc.jpg);
+    }
+
+    main {
+        min-width: 600px;
+    }
+
+    img#pc { display: block; }
+    img#phone { display: none; }
+}
+
+@media screen and (min-width: 1200px) { /* TV */
+    
+    body {
+        background-image: url(../images/back-tv.jpg);
+    }
+
+    main {
+        min-width: 800px;
+    }
+
+    img#tv { display: block; }
+    img#phone { display: none; }
+}
