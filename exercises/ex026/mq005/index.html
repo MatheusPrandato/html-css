@@ -5,12 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query - Responsive Menu</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
     <header>
         <h1>My website</h1>
-        <menu>
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <menu id="itens">
             <ul>
                 <li><a href="#">Option 1</a></li>
                 <li><a href="#">Option 2</a></li>
@@ -22,7 +24,7 @@
     </header>
     <main>
         <article>
-            <h2>Texting Media Queries</h2>
+            <h2>Testing Media Queries</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit doloribus voluptatum temporibus labore mollitia voluptas tenetur ipsam ipsum est amet, repellendus ullam, possimus quo iste tempora. Consequuntur ducimus, natus, id iusto corrupti itaque tempora accusamus quidem illo similique nisi maxime, quas facere voluptas. Natus dolor, laboriosam commodi atque ipsum voluptates?</p>
             
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, omnis laboriosam, sapiente, distinctio animi nihil nostrum id delectus quibusdam accusantium eligendi fugit sint cupiditate suscipit dolorem maxime velit asperiores eius voluptatem! Hic perspiciatis cum nisi amet alias sed, ipsa vitae, porro odit, accusamus libero minus! Tempora ullam est animi omnis corporis porro expedita veniam harum labore voluptates modi autem debitis sequi vero delectus sint eligendi excepturi, libero commodi deserunt ex possimus maiores rem. Quae, blanditiis sapiente accusamus maxime rem consectetur cum, eum assumenda hic, rerum reiciendis quia corrupti! Architecto quis enim, assumenda temporibus adipisci dolorem impedit! Beatae ratione cumque molestiae.</p>
@@ -34,5 +36,15 @@
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda non dolorum nobis rem expedita modi, mollitia esse deleniti exercitationem natus provident nihil illum, pariatur nulla earum commodi beatae. Repellat officiis ducimus dolore maiores odio unde aliquam vel voluptas iste, nemo sit incidunt qui in animi dolores possimus, deleniti id fugiat. Ratione, et ipsa, vel distinctio quod ut, quam iure maxime sunt vero dolores. Veritatis velit, officia consequuntur quod nobis possimus excepturi minima eos quia perferendis vero ut sapiente, vel ipsam accusamus quo, modi illo neque iure maxime nulla. Provident deleniti corporis ratione aliquam commodi. Repellendus doloremque, doloribus deserunt aspernatur, soluta mollitia, aperiam perspiciatis sequi officiis commodi dolor repudiandae at ratione accusantium consectetur! Animi illo suscipit odio nisi illum cupiditate unde, ea ducimus, rem voluptate eveniet culpa incidunt minima quidem numquam. Esse, dolorum. Et pariatur libero aut animi ipsa. Tempora asperiores accusamus ipsa sunt sint modi rerum incidunt, earum accusantium tempore animi inventore fuga harum perspiciatis deserunt quibusdam itaque doloremque necessitatibus magni, porro ratione recusandae consequatur numquam delectus. Sed fugiat perspiciatis illum doloribus totam similique, suscipit labore quam voluptatibus quisquam saepe magni nihil numquam maxime repellendus dolorum quae at, nam, quidem mollitia? Dicta, quaerat perferendis est obcaecati eum veniam sunt illum?</p>
         </article>
     </main>
+    <script>
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } 
+            else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>
