@@ -4,80 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FlexBox</title>
-    <style>
-        main {
-            background-color: antiquewhite;
-            height: 500px;
-            width: 500px;
-        }
-
-        .div1 {
-            background-color: lightblue;
-            width: 50px;
-            height: 50px;
-            border-radius: 10px;
-            text-align: center;
-            margin: 5px;
-        }
-
-        .div2 {
-            background-color: lightcoral;
-            width: 50px;
-            height: 50px;
-            border-radius: 10px;
-            text-align: center;
-            margin: 5px;
-        }
-
-        .div3 {
-            background-color: plum;
-            width: 50px;
-            height: 50px;
-            border-radius: 10px;
-            text-align: center;
-            margin: 5px;
-        }
-
-        .container {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            align-content: center;
-        }
-
-        .div1,
-        .div2,
-        .div3,
-        .div4,
-        .div5,
-        .div6,
-        .div7,
-        .div8,
-        .div9,
-        .div10,
-        .div11,
-        .div12 {
-        }
-    </style>
+    <title>Consoles - Flexbox</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <main class="container">
-        <div class="div1">1</div>
-        <div class="div2">2</div>
-        <div class="div3">3</div>
-        <div class="div1">4</div>
-        <div class="div2">5</div>
-        <div class="div3">6</div>
-        <div class="div1">7</div>
-        <div class="div2">8</div>
-        <div class="div3">9</div>
-        <div class="div1">10</div>
-        <div class="div2">11</div>
-        <div class="div3">12</div>
-        <div class="div1">13</div>
-        <div class="div2">14</div>
-        <div class="div3">15</div>
-    </main>
+    <header>
+        <div class="logo"></div>
+        <ul class="menu">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Instructions</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Address</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+
+    <h1>Consoles</h1>
+
+    <section class="container">
+        <div><img src="images/ps5-01.jpg" alt="ps5 image"></div>
+        <div><img src="images/ps5-02.jpg" alt="ps5 controller image"></div>
+        <div><img src="images/ps5-03.jpg" alt="ps5 controller back image"></div>
+        <div><img src="images/xbox-01.jpg" alt="xbox image"></div>
+        <div><img src="images/xbox-02.jpg" alt="xbox controller image"></div>
+        <div><img src="images/xbox-03.jpg" alt="xbox controller back image"></div>
+    </section>
 </body>
 </html>

@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@100&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'MuseoModerno', 'cursive';
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+
+    background-color: rgba(0, 0, 0, 0.85);
+}
+
+header {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 5px 20px black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    width: 45px;
+    height: 45px;
+    border-radius: 10px;
+    background-image: linear-gradient(to right top, rgb(55, 133, 55), rgb(93, 233, 93), rgba(255, 255, 255, 0.959));
+    margin: 10px;
+}
+
+.menu {
+    list-style-type: none;
+    display: flex;
+    margin: 10px;
+    flex-wrap: wrap;
+}
+
+.menu li a {
+    text-decoration: none;
+    padding: 5px 10px 5px 10px;
+    color: white;
+    display: block;
+    margin-left: 10px;
+}
+
+.menu li a:hover {
+    background-color: #333;
+    border-radius: 10px;
+}
+
+h1 {
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container div {
+    flex: 1 1 300px
+}
+
+img {
+    width: 100%;
+    border-radius: 10px;
+}
